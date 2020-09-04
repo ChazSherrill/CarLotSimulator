@@ -8,8 +8,13 @@ namespace CarLotSimulator
         public CarLot()
         {
         }
-        public List<Car> MyCarLot = new List<Car>(); 
-        
+        public List<Car> MyCarLot = new List<Car>();
+        public static int numberOfCars = 0;
+
+        public static void ReportOfCarLot ()
+        {
+            Console.WriteLine($"There are {numberOfCars} in all car lots.");
+        }
     }
 }
 //Create a CarLot class

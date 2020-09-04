@@ -36,6 +36,8 @@ namespace CarLotSimulator
 
             thisCarLot.MyCarLot.Add(camry);
 
+            CarLot.ReportOfCarLot();
+
             var mustang = new Car() { Year = 1979, Make="Ford", Model= "Mustang", EngineNoise= "WAAAAAAAAWAAAAAAwaaaa", HonkNoise="Move", IsDriveable = true};
 
             //mustang.Year = 1979;
@@ -48,9 +50,12 @@ namespace CarLotSimulator
             mustang.MakeEngineNoise();
             mustang.MakeEngineNoise();
 
+            CarLot.ReportOfCarLot();
+
             thisCarLot.MyCarLot.Add(mustang);
 
             var deathmachine = new Car(7088, "Death Machine", "Excelsior", "o2ijfoij23ijfffij23f", "I AM THE SENATE", true);
+            CarLot.ReportOfCarLot();
 
             //deathmachine.Year = 7088;
             //deathmachine.Make = "Death Machine";
@@ -74,7 +79,8 @@ namespace CarLotSimulator
                 listCars.MakeHonkNoise();
                 Console.WriteLine("----------------");
             }
-            
+            CarLot.ReportOfCarLot();
+
 
             //*************BONUS*************//
 
